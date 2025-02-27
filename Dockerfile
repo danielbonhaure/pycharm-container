@@ -280,6 +280,6 @@ CMD ["/opt/pycharm/bin/pycharm", "-Dide.browser.jcef.enabled=true"]
 # --name PyCharmIDE \
 # --env DISPLAY="${DISPLAY}" \
 # --mount type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix \
-# --mount type=bind,source="$(pwd)"/PycharmProjects,target=/home/pycharm/PycharmProjects \
+# --mount type=bind,source="${HOME}"/PycharmProjects,target=/home/pycharm/PycharmProjects \
 # --workdir /home/pycharm/PycharmProjects \
 # --detach --rm pycharm-ide:latest
